@@ -3,7 +3,7 @@ pragma solidity ^0.8.23;
 
 import "@openzeppelin/contracts/interfaces/IERC20.sol";
 
-
+// 质押合约
 contract StakingRewards{
     IERC20 public immutable stakingToken;
     IERC20 public immutable rewardsToken;
@@ -129,6 +129,4 @@ contract StakingRewards{
     function _min(uint x,uint y) private pure returns (uint){
         return x <= y ? x: y;
     }
-
-
 }
